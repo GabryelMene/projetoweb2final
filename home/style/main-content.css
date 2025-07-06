@@ -1,0 +1,232 @@
+@charset "UTF-8"; 
+
+:root {
+    --red-nike: #bf031c; 
+    --dark-gray: darkslategray; 
+    --white-smoke: whitesmoke;
+    --white: white; 
+}
+
+.main-content .slide-nike {
+    background-color: var(--red-nike);
+}
+
+.main-content .div-slide-mobile {
+    display: none;
+}
+
+.main-content .div-slide-tablet-pc {
+    display: none;
+}
+
+/* MOBILE  */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .main-content .div-slide-mobile {
+        display: block;
+    }
+
+    .main-content .div-slide-mobile {
+        margin-top: 195px;
+    }
+
+    .main-content .slide {
+        height: 350px;
+    }
+}
+
+/* TABLET - PC */
+
+@media (min-width: 769px) {
+    .main-content .div-slide-tablet-pc {
+        display: block;
+        height: 350px;
+
+    }
+}
+
+/* BRANDS SHOW */
+
+.main-content .section-brands {
+    margin: 15px;
+}
+
+.main-content .div-brands {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.main-content .div-brands .div-brand {
+    height: 200px;
+    width: 200px;
+    background-color: var(--white);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px rgba(100, 100, 100, 0.3);
+    cursor: pointer
+}
+
+@media (min-width: 320px) and (max-width: 1260px) {
+    .main-content .div-brands {
+        flex-wrap: wrap;
+    }
+}
+
+.main-content .section-brands .title-brand {
+    color: var(--dark-gray);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Products css */ 
+
+.main-content .section-products {
+    margin: 15px;
+}
+
+@media (min-width: 768px) {
+    .main-content .section-sneakers {
+        margin-top: 200px !important;
+    }
+}
+
+.main-content .section-products .title-product {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 27px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) { 
+    .main-content .section-products .title-product {
+        text-align: center;
+     }
+}
+ 
+.main-content .section-products .div-products { 
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    
+}
+
+@media (min-width: 320px) and (max-width: 1260px) {
+    .main-content .section-products .div-products {
+        flex-wrap: wrap;
+    }
+}
+
+.main-content .div-product {
+    height: auto;
+    width: 300px;
+    background-color: var(--white);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+}
+
+/* product data */
+
+
+
+.main-content .image-product {
+    width: 80%;
+}
+
+.main-content .inside-title-product {
+    font-weight: 900;
+    font-size: 1.3rem;
+    
+}
+
+
+.main-content .inside-value-product {
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* brand */
+
+.main-content .div-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content .div-brand .logo-brand {
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* div security info */
+
+.main-content .div-security {
+    margin: 30px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-content .div-content-security {
+    background-color: var(--white);
+    height: auto;
+    width: auto;
+    display: flex;
+    box-shadow: 1px 1px 10px 1px rgba(100, 100, 100, 0.3);
+    border-radius: 10px;
+}
+
+.main-content .security-text-content {
+    display: flex;
+    padding: 15px;
+    padding-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-content .security-text-content .security-title {
+    font-weight: 900;
+}
+
+.main-content .security-text-content .security-title-2 {
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.main-content .security-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 320px) and (max-width: 600px) {
+    .main-content .security-text-content { 
+        padding-left: 15px;
+    }
+    
+    .main-content .security-image { 
+        display: none;
+    }
+}
+
+.main-content .security-image .image-security {
+    width: 70%;
+}
+
+.main-content .input-error {
+    color: white;
+    background-color: red;
+    padding: 10px;
+    font-size: 0.9em;
+    margin-top: 3px;
+}

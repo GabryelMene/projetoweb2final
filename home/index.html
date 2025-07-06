@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="BuzzDrop - compre online com segurança e privacidade!"
+    />
+    <meta
+      name="keywords"
+      content="loja online, segurança, privacidade, compras, dropshipping, tenis, sneaker, estilo, roupas"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/header-mobile.css" />
+    <link rel="stylesheet" href="style/header-tablet-pc.css" />
+    <link rel="stylesheet" href="style/main-content.css" />
+    <link rel="stylesheet" href="style/footer-content.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>BuzzDrop - Home</title>
+  </head>
+  <body>
+    <!--Header tablet e pc-->
+    <header class="header-tablet-pc">
+      <nav class="header-items">
+        <ul class="header-items-list">
+          <li class="header-list-item header-list-item-1">
+            <img
+              src="./assets/buzzdrop-logo.png"
+              alt="BuzzDrop logo"
+              class="buzzdrop-logo"
+            />
+          </li>
+          <li class="header-list-item header-list-item-2">
+            <a class="text-item" href="/cadastro/"> Cadastrar-se </a>
+          </li>
+          <li class="header-list-item header-list-item-3">
+            <a class="text-item" href="/carrinho/"> Meu Carrinho </a>
+          </li>
+          <li class="header-list-item header-list-item-4">
+            <a class="text-item" href="/admin/"> Meus produtos </a>
+          </li>
+          <li class="header-list-item header-list-item-5">
+            <div class="header-search-items">
+              <span class="material-symbols-outlined search-icon">search</span>
+              <input
+                type="search"
+                name="search"
+                id="searchId"
+                placeholder="Pesquisar produto..."
+                required
+              />
+            </div>
+          </li>
+          <li class="header-list-item header-list-item-6">
+            <a class="text-item" href="/login/"> Log-in </a>
+            <span class="material-symbols-outlined">login</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Header mobile-->
+    <header class="header-mobile">
+      <div class="header-items">
+        <a href="#">
+          <h2 class="buzzdrop-logo"><span class="buzz">Buzz</span>Drop</h2></a
+        >
+        <div class="header-search-items">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input
+            type="search"
+            name="search"
+            id="searchId"
+            placeholder="Pesquisar produto..."
+            required
+          />
+        </div>
+      </div>
+      <nav class="header-options">
+        <ul class="header-list-options">
+          <li class="list-option-1">
+            <a href="/home/">
+               <img src="./icons/home.png" alt="Home" class="home-icon" />
+            </a>
+          </li>
+          <li class="list-option-2">
+            <a href="/login/" class="list-span">Fazer Login</a>
+          </li>
+          <li class="list-option-3">
+            <a href="/cadastro/" class="list-span">Cadastrar-se</a>
+          </li>
+          <li class="list-option-4">
+            <a href="/carrinho/" class="list-span">Meu carrinho</a>
+          </li>
+          <li class="list-option-4">
+            <a href="/admin/" class="list-span">Meus produtos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+        <section class="div-slides"> 
+            <div
+                id="carouselExampleControls"
+                class="carousel slide div-slide-mobile"
+                data-ride="carousel"
+            >
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                    class="d-block w-100 slide slide-nike"
+                    src="./images/stock/nike.png"
+                    alt="Primeiro Slide"
+                    />
+                </div>
+                <div class="carousel-item slide">
+                    <img
+                    class="d-block w-100 slide"
+                    src="./images/stock/pokemon.png"
+                    alt="Segundo Slide"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                    class="d-block w-100 slide"
+                    src="./images/stock/mschf.png"
+                    alt="Terceiro Slide"
+                    />
+                </div>
+                </div>
+                <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="prev"
+                >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+                </a>
+                <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-slide="next"
+                >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <div
+                id="carouselExampleIndicators"
+                class="carousel slide div-slide-tablet-pc"
+                data-ride="carousel"
+            >
+                <ol class="carousel-indicators">
+                <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                ></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                    class="d-block w-100 slide"
+                    src="./images/stock/public.png"
+                    alt="Primeiro Slide"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                    class="d-block w-100 slide"
+                    src="./images/stock/public-2.png"
+                    alt="Segundo Slide"
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                    class="d-block w-100 slide"
+                    src="./images/stock/public-3.png"
+                    alt="Terceiro Slide"
+                    />
+                </div>
+                </div>
+                <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev"
+                >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+                </a>
+                <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next"
+                >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        <section class="section-products section-sneakers">
+            <h2 class="title-product">Sneakers</h2>
+            <div class="div-products">
+                <div class="div-product">
+                    <img src="./images/sneakers/mschf_ac1.webp" alt="imagem do sneaker" class="image-product">
+                    <h2 class="inside-title-product">MSCHF - AC1</h2>
+                    <span class="inside-value-product">R$ 800.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/sneakers/nike_airmax97.webp" alt="imagem do sneaker" class="image-product">
+                    <h2 class="inside-title-product">Nike - Air Max 97</h2>
+                    <span class="inside-value-product">R$ 1.800.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/sneakers/nike_cortez.png" alt="imagem do sneaker" class="image-product">
+                    <h2 class="inside-title-product">Nike - Cortez</h2>
+                    <span class="inside-value-product">R$ 600.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/sneakers/gucci_rhyton.png" alt="imagem do sneaker" class="image-product">
+                    <h2 class="inside-title-product">Gucci - Rhyton</h2>
+                    <span class="inside-value-product">R$ 6.500.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/sneakers/yeezy350.webp" alt="Imagem do sneaker" class="image-product">
+                    <h2 class="inside-title-product">Yeezy - Yeezy 350</h2>
+                    <span class="inside-value-product">R$ 1.200.99</span>
+                </div> 
+            </div>
+        </section>
+        <section class="section-brands">
+            <h2 class="title-brand">
+                Nossas marcas
+            </h2>
+            <div class="div-brands">
+                <div class="div-brand">
+                    <img src="./images/logo/MSCHF_logo.png" alt="marca MSCHF" class="logo-brand">
+                </div>
+                <div class="div-brand">
+                    <img src="./images/logo/nike_logo.jpg" alt="marca nike" class="logo-brand">
+                </div>
+                <div class="div-brand">
+                    <img src="./images/logo/traviscott.webp" alt="marca travis scott" class="logo-brand">
+                </div>
+                <div class="div-brand">
+                    <img src="./images/logo/Louis_Vuitton-Logo.wine.png" alt="marca Louis Vuitton" class="logo-brand">
+                </div>
+                <div class="div-brand">
+                    <img src="./images/logo/adidas_logo.jpg" alt="Marca Adidas" class="logo-brand">
+                </div> 
+                <div class="div-brand">
+                    <img src="./images/logo/fila_logo.jpg" alt="Marca Fila" class="logo-brand">
+                </div> 
+            </div>
+        </section>
+        <div class="div-security">
+            <div class="div-content-security">
+                <div class="security-text-content">
+                    <h2 class="security-title">Segurança e Autenticidade</h2>
+                    <h3 class="security-title-2">Sua compra é 100% garantida pela BuzzDrop</h3>
+                </div>
+                <div class="security-image">
+                    <img src="./images/stock/produtos.webp" alt="Imagem de produtos" class="image-security">
+                </div>
+            </div>
+        </div>
+        <section class="section-products">
+            <h2 class="title-product">Shirts</h2>
+            <div class="div-products">
+                <div class="div-product">
+                    <img src="./images/camisas/polo-haunted-mound.jpg" alt="imagem da camisa" class="image-product">
+                    <h2 class="inside-title-product">Haunted Mound - Polo</h2>
+                    <span class="inside-value-product">R$ 100.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/camisas/travis-scott-shirt.png" alt="imagem da camisa" class="image-product">
+                    <h2 class="inside-title-product">Travis scott - Utopia</h2>
+                    <span class="inside-value-product">R$ 300.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/camisas/vultures-shirt.webp" alt="imagem da camisa" class="image-product">
+                    <h2 class="inside-title-product">Yeezy- Vultures</h2>
+                    <span class="inside-value-product">R$ 1000.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/camisas/louis-vuitton-shirt.webp" alt="imagem da camisa" class="image-product">
+                    <h2 class="inside-title-product">Louis Vuitton - Shirt</h2>
+                    <span class="inside-value-product">R$ 570.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/camisas/nike-shirt.avif" alt="imagem da camisa" class="image-product">
+                    <h2 class="inside-title-product">Nike- Shirt</h2>
+                    <span class="inside-value-product">R$ 200.99</span>
+                </div> 
+            </div>
+        </section>
+        <section class="section-products">
+            <h2 class="title-product">Pokemon Cards</h2>
+            <div class="div-products">
+                <div class="div-product">
+                    <img style="width: 70%;" src="./images/cards/reshiram.png" alt="imagem da carta" class="image-product">
+                    <h2 class="inside-title-product">Carta - Carta shiny Reshiram</h2>
+                    <span class="inside-value-product">R$ 299.99</span>
+                </div>
+                <div class="div-product">
+                    <img src="./images/cards/mewtwo.png" alt="imagem da carta" class="image-product">
+                    <h2 class="inside-title-product">Pokémon - Carta lendária Mewtwo</h2>
+                    <span class="inside-value-product">R$ 199.99</span>
+                </div>
+                <div class="div-product">
+                    <img style="width: 100%;" src="./images/cards/Zacian.png" alt="imagem da carta" class="image-product">
+                    <h2 class="inside-title-product">Pokémon - Carta rara Zacian</h2>
+                    <span class="inside-value-product">R$ 59.99</span>
+                </div>
+                <div class="div-product">
+                    <img style="width: 60%;" src="./images/cards/GAOGAENEX.png" alt="imagem da carta" class="image-product">
+                    <h2 class="inside-title-product">Pokémon - Carta rara GAOGAENEX</h2>
+                    <span class="inside-value-product">R$ 59.99</span>
+                </div>
+                <div class="div-product">
+                    <img style="width: 60%;" src="./images/cards/ting-luxex.png" alt="imagem da carta" class="image-product">
+                    <h2 class="inside-title-product">Pokémon - Carta lendária Ting luxEX</h2>
+                    <span class="inside-value-product">R$ 1999.99</span>
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer class="footer-content">
+        <h3> 🏳️‍⚧️ Português - BR</h3>
+        <hr>
+        <h3>Entre em contato</h3>
+        <ul>
+            <li>buzzdrop.app@gmail.com</li>
+            <li>Instragram: @buzzdrop</li>
+        </ul>
+    </footer>
+  </body>
+</html>
