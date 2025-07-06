@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+:root {
+    --black: black; 
+    --white: white; 
+    --nude: #EBE5AC; 
+}
+
+.header-tablet-pc {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+/*
+@media (min-width: 400px) and (max-width: 600px) {
+    .header-mobile { 
+        display: block;
+    }
+}*/
+
+@media (max-width: 768px) {
+    .header-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .header-tablet-pc {
+        display: block;
+    }
+}
+
+
+.header-tablet-pc .header-items {
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.header-tablet-pc .header-items-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-tablet-pc .header-items-list li {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.header-tablet-pc .header-items-list .header-list-item-5 {
+    width: 65%;
+}
+
+.header-tablet-pc .header-items-list .header-list-item-6 {
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+
+
+.header-tablet-pc .buzzdrop-logo {
+    width: 100px;
+}
+
+
+.header-tablet-pc .header-items .header-search-items .search-icon {
+    font-size: 25pt;
+    font-weight: 900;
+}
+
+.header-tablet-pc .search-icon {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    font-size: 10pt;
+}
+
+
+.header-tablet-pc #searchId {
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 20px;
+    width: 100%;
+    font-size: 13pt;
+}
+
+.header-tablet-pc .header-search-items {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+    width: 90%;
+}
+
+.header-tablet-pc .header-list-item {
+    cursor: pointer;
+}
+
+.header-tablet-pc .header-list-item-5 {
+    width: 100%;
+}
