@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+.main-content {
+    display: flex;
+}
+
+.main-content .login-container {
+    display: flex;
+    padding: 15px;
+    gap: 100px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 400px) and (max-width: 600px) { 
+    .main-content .login-container {
+        margin-top: 100px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .main-content .image-title {
+        width: 90%;
+    }
+
+    .main-content .label {
+        font-size: 2rem;
+    }
+
+    .main-content .input {
+        font-size: 1.5rem;
+    }
+}
+
+
+
