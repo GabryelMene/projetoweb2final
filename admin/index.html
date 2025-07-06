@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="BuzzDrop - compre online com segurança e privacidade!"
+    />
+    <meta
+      name="keywords"
+      content="loja online, segurança, privacidade, compras, dropshipping, tenis, sneaker, estilo, roupas"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/login-style.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/main-content.css" />
+    <link rel="stylesheet" href="./style/header-mobile.css" />
+    <link rel="stylesheet" href="./style/header-tablet-pc.css" />
+    <link rel="stylesheet" href="./style/footer-content.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-tablet-pc">
+      <nav class="header-items">
+        <ul class="header-items-list">
+          <li class="header-list-item header-list-item-1">
+            <img
+              src="./assets/buzzdrop-logo.png"
+              alt="BuzzDrop logo"
+              class="buzzdrop-logo"
+            />
+          </li>
+          <li class="header-list-item header-list-item-2">
+            <a class="text-item" href="/cadastro/"> Cadastrar-se </a>
+          </li>
+          <li class="header-list-item header-list-item-3">
+            <a class="text-item" href="/carrinho/"> Meu Carrinho </a>
+          </li>
+          <li class="header-list-item header-list-item-4">
+            <a class="text-item" href="/admin/"> Meus produtos </a>
+          </li>
+          <li class="header-list-item header-list-item-5">
+            <div class="header-search-items">
+              <span class="material-symbols-outlined search-icon">search</span>
+              <input
+                type="search"
+                name="search"
+                id="searchId"
+                placeholder="Pesquisar produto..."
+                required
+              />
+            </div>
+          </li>
+          <li class="header-list-item header-list-item-6">
+            <a class="text-item" href="/login/"> Log-in </a>
+            <span class="material-symbols-outlined">login</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Header mobile-->
+    <header class="header-mobile">
+      <div class="header-items">
+        <a href="#">
+          <h2 class="buzzdrop-logo"><span class="buzz">Buzz</span>Drop</h2></a
+        >
+        <div class="header-search-items">
+          <span class="material-symbols-outlined search-icon">search</span>
+          <input
+            type="search"
+            name="search"
+            id="searchId"
+            placeholder="Pesquisar produto..."
+            required
+          />
+        </div>
+      </div>
+      <nav class="header-options">
+        <ul class="header-list-options">
+          <li class="list-option-1">
+            <a href="/home/">
+               <img src="./icons/home.png" alt="Home" class="home-icon" />
+            </a>
+          </li>
+          <li class="list-option-2">
+            <a href="/login/" class="list-span">Fazer Login</a>
+          </li>
+          <li class="list-option-3">
+            <a href="/cadastro/" class="list-span">Cadastrar-se</a>
+          </li>
+          <li class="list-option-4">
+            <a href="/carrinho/" class="list-span">Meu carrinho</a>
+          </li>
+          <li class="list-option-4">
+            <a href="/admin/" class="list-span">Meu produtos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="dashboard">
+      <h1>Meus Produtos</h1>
+      <a href="/cadastro_item/" class="new-item-button">Novo item</a>
+      <div class="table-wrapper">
+        <table class="produtos-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Imagem</th>
+              <th>Nome</th>
+              <th>Preço</th>
+              <th>Descrição</th>
+              <th>Categoria</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img src="./images/camisas/louis-vuitton-shirt.webp" alt="imagem do produto" class="image-product"/> 
+              </td>
+              <td>Camisa Louis Vuitton</td>
+              <td>R$ 199.90</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio inventore ipsum in, ratione est provident quia explicabo quos sapiente sit, quis qui veniam voluptate impedit itaque vero a expedita.</td>
+              <td>Camisas</td>
+              <td>
+                <button class="btn edit">Editar</button>
+                <button class="btn delete">Excluir</button>
+              </td>
+            </tr>
+            <!---->
+            <tr>
+              <td>2</td>
+              <td>
+                <img src="./images/sneakers/mschf_ac1.webp" alt="imagem do produto" class="image-product"/> 
+              </td>
+              <td>MSCHF - AC1</td>
+              <td>R$ 800.99</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio inventore ipsum in, ratione est provident quia explicabo quos sapiente sit, quis qui veniam voluptate impedit itaque vero a expedita.</td>
+              <td>Sneakers</td>
+              <td>
+                <button class="btn edit">Editar</button>
+                <button class="btn delete">Excluir</button>
+              </td>
+            </tr>
+            <!---->
+            <tr>
+              <td>2</td>
+              <td>
+                <img src="./images/cards/Zacian.png" alt="imagem do produto" class="image-product"/> 
+              </td>
+              <td>Pokémon - Zacian</td>
+              <td>R$ 199.99</td>
+              <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio inventore ipsum in, ratione est provident quia explicabo quos sapiente sit, quis qui veniam voluptate impedit itaque vero a expedita.</td>
+              <td>Cartas</td>
+              <td>
+                <button class="btn edit">Editar</button>
+                <button class="btn delete">Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

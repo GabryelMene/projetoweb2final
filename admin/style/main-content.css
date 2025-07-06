@@ -1,0 +1,107 @@
+:root {
+    --black: black; 
+    --white: white; 
+    --nude: #EBE5AC; 
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.dashboard {
+  width: 90%;
+  margin-top: 150px;
+  max-width: 900px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.dashboard .new-item-button {
+  margin: 10px;
+  margin-left: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+}
+
+@media (min-width: 400px) and (max-width: 930px) {
+  .dashboard {
+    margin-top: 950px;
+  }
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 900 !important;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.produtos-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.produtos-table th,
+.produtos-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.produtos-table thead th {
+  background-color: var(--nude);
+  font-weight: 900;
+}
+
+.produtos-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+
+.btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: opacity .2s ease;
+  margin-top: 10px;
+}
+
+.btn.edit {
+  background: #4caf50;
+}
+
+.btn.delete {
+  background: #f44336;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.image-product {
+  width: 100%;
+}
