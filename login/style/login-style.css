@@ -57,4 +57,19 @@ body {
 }
 
 
+.field-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.field-group select { 
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
 

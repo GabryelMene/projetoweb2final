@@ -7,6 +7,10 @@
     --white: white; 
 }
 
+.main-content {
+    background-color: var(--white-smoke);
+}
+
 .main-content .slide-nike {
     background-color: var(--red-nike);
 }
@@ -43,6 +47,16 @@
         height: 350px;
 
     }
+}
+
+.div-slides {
+    height: 350px;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 800px;
+    margin-bottom: 100px;
 }
 
 /* BRANDS SHOW */
@@ -85,6 +99,7 @@
 .main-content .section-products {
     margin: 15px;
 }
+
 
 @media (min-width: 768px) {
     .main-content .section-sneakers {
@@ -141,7 +156,7 @@
 .main-content .inside-title-product {
     font-weight: 900;
     font-size: 1.3rem;
-    
+     
 }
 
 

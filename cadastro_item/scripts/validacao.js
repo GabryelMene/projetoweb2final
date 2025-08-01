@@ -1,7 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formProduto");
   const nome = document.getElementById("nome");
-  const imagem = document.getElementById("imagem");
   const preco = document.getElementById("preco");
   const descricao = document.getElementById("descricao");
   const categoria = document.getElementById("categoria");
@@ -16,7 +15,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     let valid = true;
     const nomeValue = nome.value.trim();
-    const imagemValue = imagem.value.trim();
     const precoValue = preco.value.trim();
     const descricaoValue = descricao.value.trim();
     const categoriaValue = categoria.value;
@@ -25,16 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
       showError(nome, "Por favor, preencha o nome do produto.");
       valid = false;
     }
-    if (!imagemValue) {
-      showError(imagem, "Por favor, insira a URL da imagem.");
-      valid = false;
-    } else {
-      const urlRegex = /^(https?:\/\/.+\.(jpg|jpeg|png|gif|webp))$/i;
-      if (!urlRegex.test(imagemValue)) {
-        showError(imagem, "Insira uma URL de imagem válida.");
-        valid = false;
-      }
-    }
+  
     if (!precoValue || isNaN(precoValue) || Number(precoValue) <= 0) {
       showError(preco, "Insira um preço válido (maior que zero).");
       valid = false;

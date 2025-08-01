@@ -18,7 +18,7 @@ body {
 
 .dashboard {
   width: 90%;
-  margin-top: 150px;
+  margin-top: 100px;
   max-width: 900px;
   background: #fff;
   padding: 30px;
@@ -104,4 +104,9 @@ h1 {
 
 .image-product {
   width: 100%;
+}
+
+
+.exit-button {
+  background-color: red;
 }
